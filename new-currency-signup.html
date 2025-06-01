@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteamCoin - Nowa Kryptowaluta</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="new-currency-script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="currency-signup-form">
+            <h2>SteamCoin (STC) - Pre-sale</h2>
+            <div class="currency-info">
+                <h3>SteamCoin (STC)</h3>
+                <p class="currency-description">
+                    SteamCoin to nowa kryptowaluta dedykowana społeczności graczy. 
+                    Łączy w sobie świat gier wideo z technologią blockchain, oferując unikalne możliwości 
+                    dla graczy i inwestorów w branży gamingowej.
+                </p>
+                <div class="currency-details">
+                    <p><strong>Cena początkowa:</strong> 1 STC = 7.47 PLN</p>
+                    <p><strong>Data startu:</strong> 01.06.2024</p>
+                    <p><strong>Minimalna inwestycja:</strong> 50 PLN</p>
+                    <p><strong>Bonus za wczesną rejestrację:</strong> +20% tokenów</p>
+                </div>
+            </div>
+
+            <form id="currencySignupForm">
+                <div class="form-group">
+                    <label for="investmentAmount">Kwota Inwestycji (PLN):</label>
+                    <input type="number" id="investmentAmount" name="investmentAmount" 
+                           required min="50" step="10" placeholder="Min. 50 PLN">
+                    <div class="token-preview">
+                        Otrzymasz: <span id="tokenAmount">0</span> STC + <span id="bonusAmount">0</span> STC bonus
+                    </div>
+                    <button type="button" id="buyButton" class="btn-primary" style="margin-top: 15px; width: 100%;">
+                        Kup SteamCoiny
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <label for="paymentMethod">Metoda Płatności:</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="">Wybierz metodę płatności</option>
+                        <option value="bank_transfer">Przelew bankowy</option>
+                        <option value="blik">BLIK</option>
+                        <option value="crypto">Inna kryptowaluta</option>
+                        <option value="steam_wallet">Portfel Steam</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="walletAddress">Adres Portfela:</label>
+                    <input type="text" id="walletAddress" name="walletAddress" 
+                           placeholder="Wprowadź adres swojego portfela SteamCoin">
+                </div>
+
+                <div class="form-group">
+                    <label for="emailNotifications">Powiadomienia:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="priceUpdates" name="notifications" checked>
+                        <label for="priceUpdates">Aktualizacje cen</label>
+                        
+                        <input type="checkbox" id="newsUpdates" name="notifications" checked>
+                        <label for="newsUpdates">Wiadomości o SteamCoin</label>
+                        
+                        <input type="checkbox" id="marketUpdates" name="notifications" checked>
+                        <label for="marketUpdates">Analizy rynkowe</label>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Akceptuję regulamin i politykę prywatności SteamCoin</label>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="risk" name="risk" required>
+                    <label for="risk">Oświadczam, że rozumiem ryzyko inwestycyjne</label>
+                </div>
+
+                <button type="submit" class="btn-primary">Zapisz się na Pre-sale SteamCoin</button>
+            </form>
+
+            <div id="paymentSection" style="display:none; margin-top:30px;">
+                <form id="paymentForm">
+                    <div id="blikField" style="display:none;">
+                        <label for="blikCode">Podaj kod BLIK:</label>
+                        <input type="text" id="blikCode" maxlength="6" pattern="[0-9]{6}" placeholder="6-cyfrowy kod BLIK">
+                    </div>
+                    <div id="cardField" style="display:none;">
+                        <label for="cardPin">Podaj PIN karty:</label>
+                        <input type="password" id="cardPin" maxlength="4" pattern="[0-9]{4}" placeholder="4-cyfrowy PIN">
+                    </div>
+                    <button type="submit" class="btn-primary" style="margin-top:15px;">Potwierdzam płatność</button>
+                </form>
+            </div>
+
+            <div id="paymentSuccess" style="display:none; margin-top:30px; text-align:center;">
+                <h3>Właśnie kupiłeś SteamCoiny!</h3>
+                <p>Otrzymasz je w ciągu 2 dni.</p>
+            </div>
+
+            <div class="signup-benefits">
+                <h3>Dlaczego warto zainwestować w SteamCoin?</h3>
+                <ul>
+                    <li>20% bonus tokenów za wczesną rejestrację</li>
+                    <li>Dostęp do zamkniętej społeczności SteamCoin</li>
+                    <li>Możliwość wymiany tokenów na gry i przedmioty w sklepie Steam</li>
+                    <li>Specjalne zniżki na gry dla posiadaczy tokenów</li>
+                    <li>Wsparcie techniczne 24/7</li>
+                </ul>
+            </div>
+
+            <div class="tokenomics">
+                <h3>Tokenomics SteamCoin:</h3>
+                <div class="tokenomics-grid">
+                    <div class="tokenomics-item">
+                        <span class="percentage">40%</span>
+                        <span class="label">Pre-sale</span>
+                    </div>
+                    <div class="tokenomics-item">
+                        <span class="percentage">20%</span>
+                        <span class="label">Liquidity Pool</span>
+                    </div>
+                    <div class="tokenomics-item">
+                        <span class="percentage">20%</span>
+                        <span class="label">Development</span>
+                    </div>
+                    <div class="tokenomics-item">
+                        <span class="percentage">20%</span>
+                        <span class="label">Team & Marketing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

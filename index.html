@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Wymiany Walut</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- System Logowania -->
+        <div class="login-form">
+            <h2>Logowanie</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-primary">Zaloguj się</button>
+                <a href="#" class="forgot-password">Zapomniałem hasła</a>
+                <div class="form-switch">
+                    <p>Nie masz konta? <a href="#" id="showRegister">Zarejestruj się</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Formularz Rejestracji -->
+        <div class="register-form" style="display: none;">
+            <h2>Rejestracja</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="firstName">Imię:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Nazwisko:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numer telefonu:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email:</label>
+                    <input type="email" id="regEmail" name="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Hasło:</label>
+                    <input type="password" id="regPassword" name="regPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Potwierdź hasło:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Akceptuję regulamin</label>
+                </div>
+                <button type="submit" class="btn-primary">Utwórz konto</button>
+                <div class="form-switch">
+                    <p>Masz już konto? <a href="#" id="showLogin">Zaloguj się</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html> 

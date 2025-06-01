@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj Nową Walutę</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="currency-script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="currency-form">
+            <h2>Dodaj Nową Walutę</h2>
+            <form id="addCurrencyForm">
+                <div class="form-group">
+                    <label for="currencyName">Nazwa Waluty:</label>
+                    <input type="text" id="currencyName" name="currencyName" required 
+                           placeholder="np. Euro, Dolar, Funt">
+                </div>
+                
+                <div class="form-group">
+                    <label for="currencyCode">Kod Waluty:</label>
+                    <input type="text" id="currencyCode" name="currencyCode" required 
+                           placeholder="np. EUR, USD, GBP" maxlength="3">
+                </div>
+
+                <div class="form-group">
+                    <label for="currencySymbol">Symbol Waluty:</label>
+                    <input type="text" id="currencySymbol" name="currencySymbol" required 
+                           placeholder="np. €, $, £" maxlength="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="exchangeRate">Kurs Wymiany (PLN):</label>
+                    <input type="number" id="exchangeRate" name="exchangeRate" required 
+                           step="0.0001" min="0.0001" placeholder="np. 4.5678">
+                </div>
+
+                <div class="form-group">
+                    <label for="currencyDescription">Opis Waluty:</label>
+                    <textarea id="currencyDescription" name="currencyDescription" 
+                              rows="4" placeholder="Krótki opis waluty..."></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="isActive" name="isActive" checked>
+                    <label for="isActive">Waluta aktywna</label>
+                </div>
+
+                <button type="submit" class="btn-primary">Dodaj Walutę</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html> 

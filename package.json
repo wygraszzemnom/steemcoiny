@@ -1,0 +1,18 @@
+{
+  "name": "steamcoin-registration",
+  "version": "1.0.0",
+  "description": "System rejestracji dla SteamCoin",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+} 

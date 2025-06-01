@@ -1,0 +1,80 @@
+Struktura Strony
+
+System Logowania
+Prosty, czytelny formularz logowania na środku ekranu
+Pole na adres email z podświetloną ramką przy wprowadzaniu danych
+Pole hasłowe z funkcją ukrywania tekstu (••••••)
+Przycisk "Zaloguj się" w kolorze głównym platformy
+Link "Zapomniałem hasła" pod polem hasłowym
+Walidacja danych w czasie rzeczywistym z wyraźnymi komunikatami błędów
+
+Formularz Rejestracji
+Rozszerzona wersja formularza logowania z dodatkowymi polami
+Imię i nazwisko (oddzielne pola)
+Numer telefonu komórkowego
+Potwierdzenie hasła
+Zaznaczalne pole akceptacji regulaminu
+Przycisk "Utwórz konto" z efektami wizualnymi przy hover
+
+Panel Użytkownika
+Wygodna nawigacja po lewej stronie
+Główna sekcja do wymiany walut na środku
+Historia transakcji po prawej stronie
+Informacje o koncie użytkownika w nagłówku
+
+Sekcja Wymiany Walut
+Duże, czytelne pola wyboru walut
+Aktualne kursy walut z automatyczną aktualizacją co minutę
+Kalkulator kwoty z podglądem wyniku
+Wyraźny przycisk "Kup walutę" wyróżniający się kolorem
+
+Formularz Płatności
+Bezpieczna sekcja z certyfikatem SSL widocznym na górze
+Pole na numer karty kredytowej z walidacją formatu
+Wybór miesiąca i roku ważności (rozwijane menu)
+Pole CVV/CVC (3 lub 4 cyfry)
+Data urodzenia w formacie DD/MM/YYYY
+Przycisk potwierdzający transakcję z wyraźnym opisem
+Elementy Bezpieczeństwa
+
+Ochrona Danych
+Zielona karta SSL w pasku adresu przeglądarki
+Wskaźnik bezpieczeństwa przy formularzu płatności
+Automatyczne logowanie po 15 minutach bezczynności
+Zabezpieczenie przed atakami XSS i SQL Injection
+
+Walidacja
+Sprawdzanie poprawności danych w czasie rzeczywistym
+Wyraźne komunikaty o błędach w języku polskim
+Chronologia nieudanych prób logowania
+System blokady po wielokrotnych nieudanych próbach
+Interfejs Użytkownika
+
+Responsywność
+Dostosowanie układu do różnych rozmiarów ekranu
+Optymalizacja dla urządzeń mobilnych
+Czytelność na tabletach i smartfonach
+
+Przejrzystość
+Spójna paleta kolorów
+Intuicyjna nawigacja
+Wyraźne etapy procesu wymiany walut
+Płynne przejścia między sekcjami
+Proces Transakcyjny
+
+Logowanie/Rejestracja
+Wybór opcji wejścia do systemu
+Weryfikacja danych użytkownika
+Przekierowanie na panel główny
+
+Wymiana Walut
+Wybór waluty źródłowej i docelowej
+Wprowadzenie kwoty
+Akceptacja kursu wymiany
+Przejście do płatności
+
+Potwierdzenie
+Podsumowanie transakcji
+Weryfikacja danych płatniczych
+Ostateczne potwierdzenie
+Potwierdzenie wykonania transakcj
